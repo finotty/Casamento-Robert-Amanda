@@ -262,7 +262,7 @@ export default function GiftsList() {
               onClick={() => {
                 const message = `Parabens ao casal! quero presentear vocês com ${selectedGift.name}`;
                 const encoded = encodeURIComponent(message);
-                window.open(`https://wa.me/5521988086924?text=${encoded}`, '_blank');
+                window.open(`https://wa.me/5521989299533?text=${encoded}`, '_blank');
               }}
             >
               Falar com o casal
@@ -298,7 +298,7 @@ export default function GiftsList() {
 
       {/* Botão flutuante do WhatsApp para conversar sobre os presentes */}
       <a
-        href="https://wa.me/5521988086924"
+        href="https://wa.me/5521989299533"
         target="_blank"
         rel="noopener noreferrer"
         className="whatsapp-float"

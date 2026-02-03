@@ -1,0 +1,25 @@
+{
+  "name": "casamentofeliz",
+  "version": "1.0.0",
+  "description": "Site de lista de presentes de casamento com contribuição via PIX.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^12.8.0",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.2.0",
+    "@types/react": "^19.2.10",
+    "typescript": "^5.9.3"
+  }
+}

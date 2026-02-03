@@ -4,6 +4,9 @@ import './globals.css'
 export const metadata: Metadata = {
   title: 'Robert & Amanda - Construindo um Casamento Feliz',
   description: 'Lista de presentes de casamento',
+  icons: {
+    icon: '/favicon.ico',
+  },
 }
 
 export default function RootLayout({

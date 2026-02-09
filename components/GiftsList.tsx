@@ -192,6 +192,11 @@ export default function GiftsList() {
                 >
                   <div className="gift-icon">{gift.icon}</div>
                   <h3 className="gift-name">{gift.name}</h3>
+                  {gift.description && (
+                    <p className="gift-description">
+                      {gift.description}
+                    </p>
+                  )}
                   <p className="gift-category">{getCategoryName(gift.category)}</p>
                   <p className="gift-price">{formatPrice(gift.price)}</p>
                   <button 

@@ -16,7 +16,8 @@ export default function AdminPage() {
     name: '',
     price: '',
     category: 'casa',
-    icon: ''
+    icon: '',
+    description: ''
   });
   const [isSaving, setIsSaving] = useState(false);
   const isSavingRef = useRef(false); // Ref para ter valor atualizado imediatamente
@@ -222,7 +223,7 @@ export default function AdminPage() {
 
   const openAddModal = () => {
     setEditingGift(null);
-    setFormData({ name: '', price: '', category: 'casa', icon: '' });
+    setFormData({ name: '', price: '', category: 'casa', icon: '', description: '' });
     setShowModal(true);
   };
 
@@ -232,7 +233,8 @@ export default function AdminPage() {
       name: gift.name,
       price: gift.price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 }),
       category: gift.category,
-      icon: gift.icon
+      icon: gift.icon,
+      description: gift.description || ''
     });
     setShowModal(true);
   };
@@ -268,6 +270,7 @@ export default function AdminPage() {
           price,
           category: formData.category,
           icon: formData.icon.trim(),
+          description: formData.description.trim(),
           customPrice: formData.category === 'surpresa'
         };
 
@@ -291,6 +294,7 @@ export default function AdminPage() {
           price,
           category: formData.category,
           icon: formData.icon.trim(),
+          description: formData.description.trim(),
           taken: false,
           takenBy: '',
           takenDate: '',
@@ -305,7 +309,7 @@ export default function AdminPage() {
       
       // Fechar modal e resetar form apenas após sucesso
       setShowModal(false);
-      setFormData({ name: '', price: '', category: 'casa', icon: '' });
+      setFormData({ name: '', price: '', category: 'casa', icon: '', description: '' });
       setEditingGift(null);
       
       alert(currentEditingGift ? 'Presente editado com sucesso!' : 'Presente adicionado com sucesso!');
@@ -551,6 +555,16 @@ export default function AdminPage() {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required 
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="giftDescription">Descrição (opcional):</label>
+                <textarea
+                  id="giftDescription"
+                  value={formData.description}
+                  onChange={(e) => setFormData({ ...formData, description: e.target.value })}
+                  placeholder="Escreva uma breve descrição do presente"
+                  rows={3}
                 />
               </div>
               <div className="form-group">

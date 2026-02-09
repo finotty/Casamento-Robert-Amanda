@@ -4,6 +4,7 @@ export interface Gift {
   price: number;
   category: string;
   icon: string;
+  description?: string;
   taken: boolean;
   takenBy: string;
   takenDate: string;

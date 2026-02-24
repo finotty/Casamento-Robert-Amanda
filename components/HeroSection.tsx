@@ -9,7 +9,7 @@ export default function HeroSection() {
         <div className="hero-photo-grid">
           <div className="hero-photo-main">
             <Image 
-              src="/foto1.jpg" 
+              src="/foto1.jpeg" 
               alt="Robert e Amanda" 
               className="hero-photo"
               fill
@@ -20,7 +20,7 @@ export default function HeroSection() {
           <div className="hero-photo-side">
             <div className="hero-photo-item">
               <Image 
-                src="/foto2.jpg" 
+                src="/foto2.jpeg" 
                 alt="Robert e Amanda" 
                 className="hero-photo"
                 fill
@@ -28,18 +28,10 @@ export default function HeroSection() {
                 priority
               />
             </div>
+           
             <div className="hero-photo-item">
               <Image 
-                src="/foto3.jpg" 
-                alt="Robert e Amanda" 
-                className="hero-photo"
-                fill
-                style={{ objectFit: 'cover', objectPosition: 'center' }}
-              />
-            </div>
-            <div className="hero-photo-item">
-              <Image 
-                src="/foto4.jpg" 
+                src="/foto4.jpeg" 
                 alt="Robert e Amanda" 
                 className="hero-photo"
                 fill

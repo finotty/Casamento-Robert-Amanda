@@ -373,6 +373,13 @@ body {
     text-align: center;
 }
 
+.gift-description {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
 .gift-category {
     text-align: center;
     font-size: 0.9rem;
